@@ -30,4 +30,23 @@
 .content-container {
   width: 100%;
   min-height: 85vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+img {
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgba(214, 26, 26, 0.945);
+  border-radius: 5px;
+}
+.itemDiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px 0;
+  transition: all 0.5s ease;
+}
+.itemDiv:hover {
+  transform: scale(1.1);
 }
